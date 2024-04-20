@@ -8,6 +8,8 @@ eureka:
     instance-id: ${spring.application.name}:${instanceId:${random.value}}
     preferIpAddress: true
 spring:
+  application:
+    name: CUSTOMER-SERVICE
   datasource:
     url: jdbc:postgresql://localhost:5432/turkcell-crm
     username: postgres
